@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+/* STANDARD COMPONENTS */
+:root {
+    --font-play: 'Play', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    --color-white: #ffffff;
+    --color-white-gray: #f6f6f6;
+    --color-light-gray:  #eeeeee;
+    --color-gray: #e3e3e3;
+    --color-dark-gray: #aaaaaa;
+    --color-instock: #64cb83;
+    --color-outofstock: #fe4545;
+    --color-theme: #20d3c2;
+    --color-theme-light: #edfcfa;
+    --color-dark-theme: #0e153d;
+}
+
+hmtl, body {
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-dark-theme);
+}
+
+/* NAVIGATION AREA */
+.topnav-menu {
+  height: 40px;
+  background-color: var(--color-theme);
+  color: var(--color-white);
+  font-size: 1rem;
+}
+
+  .topnav-menu .container {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+      
+    .topnav-menu .container .site_settings {
+        display: flex;
+        align-items: center;
+    }
+
+        .topnav-menu .container .site_settings .dropdown {
+            margin-right: 2rem;
+        }
+
+            .topnav-menu .container .site_settings .dropdown button {
+                background-color: transparent;
+                color: var(--color-white);
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+    .topnav-menu .container .links {
+        display: flex;
+    }
+    .topnav-menu .container .links a {
+        color: var(--color-white);
+        text-decoration: none;
+        margin-left: 0.8rem;
+    }
+      
+    .topnav-menu .container .links a:hover {
+        color: var(--color-dark-theme);
+    }
