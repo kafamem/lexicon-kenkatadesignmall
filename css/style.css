@@ -69,3 +69,113 @@ hmtl, body {
     .topnav-menu .container .links a:hover {
         color: var(--color-dark-theme);
     }
+
+/* HEADER CONTENT */
+.header-content {
+    padding: 20px 0;
+}
+    .header-content .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-content .store-logo {
+        flex: 2;
+    }
+        .header-content .store-logo img {
+            height: 2rem;
+        }
+    
+    .header-content .searchbar {
+        flex: 3;
+        position: relative;
+        height: 45px;
+        width: 100px;
+    }
+
+        .header-content .searchbar .dropdown .category-menu {
+            position: absolute;
+            top: 20;
+            right: 50px;
+            background-color: transparent;
+            color: var(--color-dark-themegray);
+            height: 45px;
+            width: 28%;
+            line-height: 32px;
+            text-align: left;
+            font-size: 1rem;
+            border: 1px solid var(--color-dark-gray);
+        }
+
+        .header-content .searchbar .dropdown .category-menu i {
+            color: var(--color-theme);
+            background-color: transparent;
+        }
+
+        .header-content .searchbar .dropdown .category-menu i:hover {
+            color: var(--color-dark-theme);
+        }
+
+        .header-content .searchbar .dropdown-menu a {
+            color: var(--color-dark-theme);
+        }
+
+        .header-content .searchbar input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid var(--color-dark-gray);
+            height: 100%;
+            width: 100%;
+            border-radius: 25px;
+            padding-left: 20px;
+            outline: var(--color-theme);
+        }
+
+        .header-content .searchbar i {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            height: 100%;
+            width: 50px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 0 25px 25px 0;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+
+    .header-content .store-menu {
+        flex: 2;
+        justify-content: end;
+        display: flex;
+    }
+    .header-content .store-menu a {
+        text-decoration: none;
+        color: var(--color-dark-theme);
+        margin-left: 1rem;
+        font-size: 0.9rem;
+        align-items: center;
+    }
+
+    .header-content .store-menu a:hover {
+        color: var(--color-theme);
+    }
+    
+        .header-content .store-menu a i {
+            font-size: 1.45rem;
+            margin-right: 0.3rem;
+            position: relative;
+        }
+
+        .header-content .store-menu a i .badge {
+            font-size: 0.6rem;
+            background-color: var(--color-theme);
+            position: absolute;
+            top: -5px;
+            left: 20px;
+        }
